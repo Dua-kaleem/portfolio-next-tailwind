@@ -2,26 +2,154 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --text-color: #f5f5f5; 
+  --hover-color: #FF10F0; 
+  --bg-color: #250821;
+  --second-bg-color: #292e33;
+  --font-family-rubik :'Rubik Wet Paint';
+--bg-font: 2.5rem;
+  --normal-font: 2rem;
+  --neon-box-shadow: 0 0 .5rem #FF10F0;
+  --h2-font: 3rem;
+  --font-neon-text-shadow: 0 0 10px #FF10F0,
+    0 0 20px rgba(255, 0, 255, 0.8),  /* Pink inner glow */
+    0 0 300px rgba(255, 0, 255, 0.6),
+    0 0 40px rgba(255, 0, 255, 0.5),
+    0 0 70px rgba(255, 0, 255, 0.4),
+    0 0 100px rgba(168, 53, 192, 0.6), /* Purple outer glow */
+    0 0 150px rgba(168, 53, 192, 0.5),
+    0 0 200px rgba(168, 53, 192, 0.4),
+    0 0 230px rgba(168, 53, 192, 0.3);
+
+    --font-neon-border-shadow: 0 0 5px #FF10F0, 
+    0 0 10px rgba(255, 0, 255, 0.8),  /* Pink inner glow */
+    0 0 30px rgba(255, 0, 255, 0.6),
+    0 0 40px rgba(255, 0, 255, 0.5),
+    0 0 50px rgba(255, 0, 255, 0.4),
+    0 0 60px rgba(168, 53, 192, 0.6), /* Purple outer glow */
+    0 0 70px rgba(168, 53, 192, 0.5),
+    0 0 80px rgba(168, 53, 192, 0.4),
+    0 0 10px rgba(168, 53, 192, 0.3);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Font Imports */
+@font-face {
+  font-family: 'Rubik Wet Paint';
+  src: url('/public/RubikWetPaint.ttf') format('truetype'); /* Path check karain */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Apply Global Styles */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif, var(--font-family-rubik), "Rubik Wet Paint";
+  padding: 0;
+  margin: 0;
+  margin-top: 130px; 
+  scroll-behavior: smooth;
+ 
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Custom Hover Text Shadow Class */
+.neon-text:hover {
+  text-shadow: var(--font-neon-text-shadow);
+}
+.font-family-rubik{
+  font-family: var(--font-family-rubik);
+}
+.nb {
+  box-shadow: var(--font-neon-border-shadow);
+}
+.br{
+  border-radius: 92% 60% 53% 98% / 100% 83% 74% 53%   ;
+}
+.bg{
+  background: rgb(173,63,251);
+  background: linear-gradient(90deg, rgb(106, 4, 101) 0%, rgb(254, 65, 238) 100%);
+}
+  /* Background overlay effect */
+.bg-overlay {
+  background: linear-gradient(45deg, rgba(255, 16, 240, 0.3), rgba(255, 255, 255, 0.1));
+}
+
+/* Image blending effect */
+.image-blend {
+  mix-blend-mode: multiply;
+  opacity: 0.9;
+}
+
+.normal-font{
+  font-size: 1.5rem;
+
+
+ 
+}
+.skill-bg{
+background: linear-gradient(90deg, rgba(255,20,147,1) 0%, rgba(255,0,255,1) 100%)
 }

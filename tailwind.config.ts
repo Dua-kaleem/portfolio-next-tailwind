@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      fontWeight: {
+        Normal: "400",
+        Medium:" 500",
+        Bold:" 700",
+      },
+     
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
