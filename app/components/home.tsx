@@ -18,7 +18,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-overlay"></div> {/* Overlay effect ke liye */}
         <div className="flex items-center justify-center z-10">
           <Image
-            src="/PF.png"
+            src="/images/PF.png"
             alt="image"
             width={250}
             height={300}
@@ -40,7 +40,7 @@ const Home = () => {
         <div className="text-[1.5rem] font-[600]">
           <h3 className="text-4xl font-bold">
             I am{" "}
-            <span className="text-2xl text-[var(--hover-color)] shadow-lg font-family-rubik">
+            <span className="text-2xl text-[var(--hover-color)] shadow-lg ">
               <TypeAnimation
                 sequence={["Web Developer", 1000, "UI/UX Designer", 1000, "Frontend Developer", 1000]}
                 wrapper="span"

@@ -37,7 +37,7 @@
 /* Font Imports */
 @font-face {
   font-family: 'Rubik Wet Paint';
-  src: url('/public/RubikWetPaint.ttf') format('truetype'); /* Path check karain */
+  src: url('/fonts/Rubik_Wet_Paint/RubikWetPaint-Regular.ttf') format('truetype'); /* Path check karain */
   font-weight: normal;
   font-style: normal;
 }

@@ -9,7 +9,7 @@ function About() {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="flex items-center justify-center font-poppins text-4xl md:text-7xl font-family-rubik font-extrabold text-[var(--hover-color)]"
+        className="flex items-center justify-center font-poppins text-4xl md:text-7xl  font-extrabold text-[var(--hover-color)]"
       >
         About Me
       </motion.h2>

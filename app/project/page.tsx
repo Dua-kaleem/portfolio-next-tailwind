@@ -8,13 +8,13 @@ function Projects() {
     {
       name: "Fashion Ecommerce website",
       description: "A fashion eCommerce website built using a Figma template, with Next.js, TypeScript, and Tailwind CSS. The website features a responsive design and clean layout, showcasing products.Technologies Used Next.js TypeScript  Tailwind CSS.",
-      imageUrl: "/pr01.png", 
+      imageUrl: "/images/pr01.png", 
       link: "https://assignment-2-cc3wsynpp-dua-kaleems-projects.vercel.app",
     },
     {
       name: "Countdown Timer",
       description: "A responsive countdown timer built with Next.js and TypeScript. Users can set, start, pause, or reset the timer, with a clean UI styled using Tailwind CSS. Deployed on Vercel, showcasing skills in React and UI design.",
-      imageUrl: "/project2.png",
+      imageUrl: "/images/project2.png",
       link: "#",
     },
     {
