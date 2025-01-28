@@ -10,7 +10,7 @@ const Home = () => {
       
       {/* Image Animation */}
       <motion.div
-        className="flex justify-center items-center w-[300px] h-[300px] relative overflow-hidden bg border-[#FF10F0] border-0 nb br"
+        className="flex justify-center items-center  w-[300px] h-[300px] relative overflow-hidden bg border-[#FF10F0] border-0 nb br"
         initial={{ scale: 0.8, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeInOut" }}
@@ -26,6 +26,7 @@ const Home = () => {
           /> 
         </div>
       </motion.div>
+      
 
       {/* Text Animation */}
       <motion.div
